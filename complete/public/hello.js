@@ -1,7 +1,7 @@
 $(document).ready(function() {
-    //alert("klar");
+
     $.ajax({
-        url: "http://localhost:8080/greeting"
+        url: "http://localhost:8080/greetings"
     }).then(function(data) {
        $('.greeting-id').append(data.id);
        $('.greeting-content').append(data.content);
